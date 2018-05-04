@@ -1,6 +1,6 @@
 # vue-yuque
 
-> →yuque
+> A Vue.js project
 
 ## Build Setup
 

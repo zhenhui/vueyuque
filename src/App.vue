@@ -1,13 +1,22 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
-  </div>
+  <div></div>
 </template>
 
 <script>
+import fly from 'flyio'
+
 export default {
-  name: 'App'
+  mounted: function() {
+    this.call()
+  },
+  methods: {
+    call(){
+      console.log('++++')
+      fly.get('/repos/pdk/sxf/docs/pto7d2?raw=1').then((res)=>{
+        console.log(res)
+      })
+    }
+  }
 }
 </script>
 
